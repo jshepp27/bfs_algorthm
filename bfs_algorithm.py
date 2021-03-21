@@ -90,7 +90,7 @@ class Graph:
 
 
 # Driver
-if __name__ == "__main__2:
+if __name__ == '__main__':
     g = Graph()
     a = Vertex('A')
     g.add_vertex(a)
