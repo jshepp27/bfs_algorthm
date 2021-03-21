@@ -90,20 +90,21 @@ class Graph:
 
 
 # Driver
-g = Graph()
-a = Vertex('A')
-g.add_vertex(a)
-g.add_vertex(Vertex('B'))
+if __name__ == "__main__2:
+    g = Graph()
+    a = Vertex('A')
+    g.add_vertex(a)
+    g.add_vertex(Vertex('B'))
 
-for v in range(ord('A'), ord('K')):
-    g.add_vertex(Vertex(chr(v)))
+    for v in range(ord('A'), ord('K')):
+        g.add_vertex(Vertex(chr(v)))
 
-edges = ['AB', 'AE', 'BF', 'CG', 'DE', 'DH', 'EH', 'FG', 'FI', 'FJ', 'GJ', 'HI']
-for edge in edges:
-    g.add_edge(edge[:1], edge[1:])
+    edges = ['AB', 'AE', 'BF', 'CG', 'DE', 'DH', 'EH', 'FG', 'FI', 'FJ', 'GJ', 'HI']
+    for edge in edges:
+        g.add_edge(edge[:1], edge[1:])
 
-# g.print_graph()
-print("\n")
-g.bfs(a)
-g.print_graph()
+    # g.print_graph()
+    print("\n")
+    g.bfs(a)
+    g.print_graph()
 
